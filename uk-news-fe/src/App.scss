@@ -1,0 +1,58 @@
+.header,
+.footer {
+    display: flex;
+    background-color: #d5f3f1;
+    padding: 10px;
+    min-height: 50px;
+}
+
+.header {
+    position: sticky;
+    top: 0;
+    border-bottom: 2px solid;
+    box-shadow: 0px 1px 2px 0px #000;
+    display: flex;
+    justify-content: space-around;
+    font-weight: bold;
+    font-size: 24px;
+    align-items: center;
+
+    a {
+        text-decoration: none;
+        color: #000;
+        font-size: 18px;
+        font-weight: bold;
+        :visited {
+            color: #000;
+        }
+    }
+}
+
+.footer {
+    border-top: 2px solid;
+}
+
+.container {
+    width: 1080px;
+    margin: 50px auto;
+    min-height: 100vh;
+    .overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #000;
+        opacity: 0.6;
+        img {
+            display: block;
+            height: 250px;
+            margin: 250px auto;
+        }
+    }
+    .page-title {
+        margin: 0 auto;
+        text-align: center;
+        padding: 10px;
+    }
+}
